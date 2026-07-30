@@ -1094,3 +1094,17 @@
   position: relative;
   z-index: 2;
 }
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-cta { display: none; }
+  .card-grid { grid-template-columns: 1fr !important; }
+  .newsletter-form-inline { flex-direction: column; height: auto; }
+  .newsletter-form-inline input { width: 100%; height: 56px; }
+  .newsletter-form-inline .btn-gradient { width: 100%; height: 56px; margin-top: 16px; }
+  .newsletter-content h2 { font-size: 2rem; }
+  .footer-newsletter-inline h3 { font-size: 1.5rem; }
+  .section-padding, .the-peak, .newsletter-section { padding: 60px 0 !important; }
+  .hero-visual { padding: 20px; }
+}
+
