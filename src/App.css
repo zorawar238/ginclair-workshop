@@ -1096,15 +1096,48 @@
 }
 
 @media (max-width: 768px) {
+  /* Announcement bar */
+  .announcement-content { flex-direction: column; gap: 12px; text-align: center; }
+  .announcement-middle { display: none; }
+  .announcement-right { flex-direction: column; gap: 8px; width: 100%; }
+  
+  /* Navbar */
   .nav-links { display: none; }
   .nav-cta { display: none; }
+  .brand-logo { margin: 0 auto; }
+  .nav-content { justify-content: center; }
+  
+  /* Hero */
+  .hero { padding-top: 32px; }
+  .hero-buttons { flex-direction: column; width: 100%; }
+  .hero-buttons button { width: 100%; }
+  .eyebrow.line-before-after { white-space: normal; text-align: center; }
+  .eyebrow.line-before-after::before, .eyebrow.line-before-after::after { display: none; }
+  .hero-title { font-size: 2.5rem !important; } /* Override clamp if it fails */
+  .hero-social-proof { flex-direction: column; text-align: center; gap: 12px; }
+  
+  /* Instructor Section */
+  .instructor-split { grid-template-columns: 1fr; gap: 40px; }
+  .instructor-info h2 { font-size: 2.5rem; }
+  
+  /* Grid layouts */
   .card-grid { grid-template-columns: 1fr !important; }
+  
+  /* Newsletter */
   .newsletter-form-inline { flex-direction: column; height: auto; }
   .newsletter-form-inline input { width: 100%; height: 56px; }
-  .newsletter-form-inline .btn-gradient { width: 100%; height: 56px; margin-top: 16px; }
+  .newsletter-form-inline .btn-gradient { width: 100%; height: 56px; margin-top: 16px; margin-left: 0; }
   .newsletter-content h2 { font-size: 2rem; }
+  .newsletter-form { max-width: 100%; }
+  
+  /* Footer */
   .footer-newsletter-inline h3 { font-size: 1.5rem; }
+  
+  /* Sections Padding */
   .section-padding, .the-peak, .newsletter-section { padding: 60px 0 !important; }
+  .is-this-for-you { padding: 60px 0; }
+  .instructor-section { padding: 60px 0; }
+  .agenda-section { padding: 60px 0; }
   .hero-visual { padding: 20px; }
 }
 
