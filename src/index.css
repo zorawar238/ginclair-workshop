@@ -21,7 +21,7 @@
   padding: 0;
 }
 
-body {
+html, body {
   background-color: var(--bg-cream);
   color: var(--ink);
   font-family: var(--font-body);
