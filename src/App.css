@@ -1098,7 +1098,7 @@
 
 @media (max-width: 768px) {
   /* Announcement bar */
-  .announcement-content { flex-direction: column; gap: 12px; text-align: center; }
+  .announcement-content { flex-direction: column; gap: 12px; text-align: center; padding: 0 16px; }
   .announcement-middle { display: none; }
   .announcement-right { flex-direction: column; gap: 8px; width: 100%; }
   
@@ -1106,25 +1106,29 @@
   .nav-links { display: none; }
   .nav-cta { display: none; }
   .brand-logo { margin: 0 auto; }
-  .nav-content { justify-content: center; }
+  .nav-content { justify-content: center; padding: 0 16px; }
   
   /* Hero */
-  .hero { padding-top: 32px; }
+  .hero { padding-top: 32px; padding-left: 24px; padding-right: 24px; }
   .hero-buttons { flex-direction: column; width: 100%; }
   .hero-buttons button { width: 100%; }
-  .eyebrow.line-before-after { white-space: normal; text-align: center; }
+  .eyebrow.line-before-after { white-space: normal; text-align: center; padding: 0 16px; }
   .eyebrow.line-before-after::before, .eyebrow.line-before-after::after { display: none; }
-  .hero-title { font-size: 2.5rem !important; } /* Override clamp if it fails */
-  .hero-social-proof { flex-direction: column; text-align: center; gap: 12px; }
+  .hero-title { font-size: 2.5rem !important; padding: 0 16px; }
+  .hero-subtext { padding: 0 16px; }
+  .hero-social-proof { flex-direction: column; text-align: center; gap: 12px; padding: 0 16px; }
   
   /* Instructor Section */
-  .instructor-split { grid-template-columns: 1fr; gap: 40px; }
+  .instructor-split { grid-template-columns: 1fr; gap: 40px; padding: 0 24px; }
   .instructor-info h2 { font-size: 2.5rem; }
   
-  /* Grid layouts */
-  .card-grid { grid-template-columns: 1fr !important; }
+  /* Cards Grid */
+  .card-grid { grid-template-columns: 1fr !important; padding: 0 16px; }
+  .flat-card { padding: 40px 24px; }
+  .agenda-card-vertical { padding: 40px 24px; }
   
   /* Newsletter */
+  .newsletter-card { padding: 40px 24px !important; }
   .newsletter-form-inline { flex-direction: column; height: auto; }
   .newsletter-form-inline input { width: 100%; height: 56px; }
   .newsletter-form-inline .btn-gradient { width: 100%; height: 56px; margin-top: 16px; margin-left: 0; }
@@ -1133,12 +1137,14 @@
   
   /* Footer */
   .footer-newsletter-inline h3 { font-size: 1.5rem; }
+  .footer-bottom { padding: 0 16px; }
+  .footer-top { padding: 0 16px; }
   
   /* Sections Padding */
-  .section-padding, .the-peak, .newsletter-section { padding: 60px 0 !important; }
-  .is-this-for-you { padding: 60px 0; }
-  .instructor-section { padding: 60px 0; }
-  .agenda-section { padding: 60px 0; }
-  .hero-visual { padding: 20px; }
+  .section-padding, .the-peak, .newsletter-section { padding: 60px 16px !important; }
+  .is-this-for-you { padding: 60px 16px; }
+  .instructor-section { padding: 60px 16px; }
+  .agenda-section { padding: 60px 16px; }
+  .hero-visual { padding: 20px 16px; }
 }
 
