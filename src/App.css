@@ -1142,6 +1142,7 @@
   
   /* Sections Padding */
   .section-padding, .the-peak, .newsletter-section { padding: 60px 16px !important; }
+  .logistics-section { padding: 60px 16px; }
   .is-this-for-you { padding: 60px 16px; }
   .instructor-section { padding: 60px 16px; }
   .agenda-section { padding: 60px 16px; }
